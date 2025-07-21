@@ -121,6 +121,7 @@ public class OrderSevice {
                         xTtsAccessToken,
                         contentType,
                         documentSize,
+                        "",
                         shopCipher
                 );
     }
