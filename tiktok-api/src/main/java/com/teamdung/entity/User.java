@@ -52,7 +52,9 @@ public class User extends Base implements UserDetails {
             return owner.getShopSet();
         }
         if(role.equals(Role.EMPLOYEE.toString())) {
-            return employee.getCategory().getShopSet();
+            if(employee.getCategory() != null){
+                return employee.getCategory().getShopSet();
+            }
         }
         return new HashSet<>();
     }
