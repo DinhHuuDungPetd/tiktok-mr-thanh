@@ -23,4 +23,4 @@ EXPOSE 3001
 ENV NODE_ENV=production
 
 # Chạy ứng dụng
-CMD ["npm", "start", "--", "-p", "3001"]
+CMD ["npm", "start"]
