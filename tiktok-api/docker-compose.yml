@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tiktok-api:latest
+    container_name: tiktok-api
+    ports:
+      - "8080:8080"
+    environment:
+      - CREDENTIALS_FILE_PATH=/app/config/cjf.json
+    volumes:
+      - /home/petd/ggdirve/cjf.json:/app/config/cjf.json
+    restart: unless-stopped

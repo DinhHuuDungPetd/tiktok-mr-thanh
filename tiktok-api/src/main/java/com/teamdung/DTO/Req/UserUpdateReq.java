@@ -1,0 +1,23 @@
+package com.teamdung.DTO.Req;
+
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class UserUpdateReq {
+
+    @NotBlank(message = "Tên không được để trống")
+    @Size(min = 3, max = 50, message = "Tên phải từ 3 đến 50 ký tự")
+    private String name;
+    private String password;
+    private String newPassword;
+    private String teamName;
+
+}
