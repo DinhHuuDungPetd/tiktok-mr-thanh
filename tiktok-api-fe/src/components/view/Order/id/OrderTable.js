@@ -252,11 +252,11 @@ export default function OrderTable({ ordersList, isLoading, shopId, change}) {
                                     </div>
                                 </td>
                                 <td className="px-3 py-2">
-                                    <span className="font-medium text-gray-900">
-                                        {order.payment.totalAmount.toLocaleString("en-US", {
+                                   <span className="font-medium text-gray-900">
+                                        {order.payment.totalAmount.toLocaleString("en-GB", {
                                             style: "currency",
-                                            currency: "USD",
-                                        })} $
+                                            currency: "GBP",
+                                        })}
                                     </span>
                                 </td>
                                 <td style={{ maxWidth: "200px" }} className="px-3 py-2">

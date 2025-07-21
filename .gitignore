@@ -1,10 +1,5 @@
 # Java
 /target/
-*.class
-*.jar
-*.war
-*.ear
-*.iml
 
 # Maven
 /logs/
